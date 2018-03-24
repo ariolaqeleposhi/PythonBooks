@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -12,8 +12,8 @@ def content():
 def results():
     return render_template('searchResults.html')
 
-@app.route('/cfgbooks/search/<book_page>/')
-def book(book_page):
-    return render_template('bookDetails.html')
+@app.route('/cfgbooks/search/<specific_book>/')
+def book(specific_book):
+   return render_template('bookDetails.html', specific_book=specific_book)
 
 app.run(debug=True)
