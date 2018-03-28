@@ -12,7 +12,8 @@ Searching for a book by category or title
 
 #### Could 
 
-Buy the selected book - adding to cart 
+Buy the selected book - adding to cart
+Search on the book result page
 
 ### Won't 
 
@@ -26,7 +27,13 @@ List of requirements:
 - Template: display image, author, title, summary 
  
 
-### First Steps 
+### To do list
+
+- Set up FLASK
+- Set up pages - three pages - homepage, search results, book page
+- Homepage - books in the background, search bar and dropdown and search button.
+- Search results page - list of books with thumbnails - limit to 5-10 books
+- Book page - book image, title, author, description, rating, buy button - direct to GoogleBooks
 
 - Use GoogleBooks API to show the books on the website 
 - Use search bar to find books 
