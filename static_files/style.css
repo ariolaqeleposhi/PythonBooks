@@ -80,6 +80,7 @@ h1 {
 	font-variant: normal;
 	font-weight: 1000;
 	line-height: 26.4px;
+
 }
 h3 {
 	font-family: Quattrocento;
@@ -97,19 +98,50 @@ p {
 	font-weight: 400;
 	line-height: 20px;
 }
-blockquote {
-	font-family: Quattrocento;
-	font-size: 21px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 30px;
+
+#container {
+  margin: auto;
+  overflow: hidden;
+  width: 1000px;
+  padding: 100px;
 }
-pre {
-	font-family: Quattrocento;
-	font-size: 13px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 18.5714px;
+
+#inner {
+  margin: auto;
+  overflow: hidden;
+  width: 1000px;
+  horizontal-align: centre;
+  vertical-align: centre;
+}
+
+.child {
+  float: left;
+  width: 250px;
+  height: 320px;
+}
+
+.childSpace {
+  float: left;
+  width: 20px;
+  height: 320px;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .card {
+    display: inline-block;
+  }
+}
+
+.searchResults {
+    padding-left: 250px;
+    padding-top: 50px;
+    horizontal-align: center;
+    vertical-align: center;
+    width: 1600px;
+    height: 100px;
+    color: #CCCCCC;
 }
